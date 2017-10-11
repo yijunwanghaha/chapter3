@@ -35,8 +35,8 @@ public class Test {
 //            System.out.print(resource.getDescription());
 //        }
 
-        ApplicationContext context=new AnnotationConfigApplicationContext(Beans.class);
-Car car=context.getBean("car",Car.class);
-System.out.print(car.getName());
+        ApplicationContext context = new AnnotationConfigApplicationContext(Beans.class);
+        Car car = context.getBean("car", Car.class);
+        System.out.print(car.getColor());
     }
 }
